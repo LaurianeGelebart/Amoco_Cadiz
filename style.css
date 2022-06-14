@@ -1,0 +1,774 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url("font/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+    font-family: "Bernard MT Condensed";
+    src: url("font/BERNHC.TTF");
+}
+
+
+body {
+    background-size: cover;
+    overflow: hidden;
+}
+
+.index {
+    background-image: url(images/acc.png) !important;
+}
+
+.index main {
+    height: 100vh;
+}
+
+.F11 {
+    padding: 0 20%;
+    opacity: 0.7;
+    z-index: 50;
+    top: 10vh;
+}
+
+.infosDebut {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    background: black;
+    padding: 10%;
+    width: 50%;
+    animation: texteDisp 10s ease-in-out;
+    opacity: 00;
+    display: block;
+}
+
+.infosDebut h2 {
+    color: #F5DE20;
+    font-size: 3vw;
+    padding: 10% 0;
+}
+
+.indexTitre {
+    margin-top: 25vh;
+    opacity: 1;
+    transition: 300ms ease-in-out opacity;
+}
+
+.sous-titre {
+    color: #F5DE20;
+    font-family: 'Glacial Indifference';
+    font-size: 5vh;
+    transition: 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    animation: arrive2 1.5s ease-in-out;
+    animation-delay: 10.2s;
+}
+
+.titre {
+    color: white;
+    font-family: 'Bernard MT Condensed';
+    font-size: 20vh;
+    transition: 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    animation: arrive 1.5s ease-in-out;
+    animation-delay: 10.2s;
+}
+
+.gtitre {
+    margin-left: 15%;
+}
+
+.lignePic {
+    padding: 0 20%;
+    opacity: 1;
+    transition: 300ms ease-in-out opacity;
+    bottom: 20vh;
+}
+
+.index .divFleches {
+    opacity: 1;
+    transition: 300ms ease-in-out opacity;
+}
+
+.pictoA {
+    margin: 2vw;
+    margin-top: 6vw;
+}
+
+.pictoA img:hover {
+    transform: scale(1.1);
+}
+
+.pictoA img {
+    width: 8vw;
+    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+@keyframes arrive {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(-20%);
+        opacity: 0.2;
+    }
+
+    20% {
+        transform: translateY(-20%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes arrive2 {
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+
+
+    10% {
+        transform: translateY(40%);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/*------------------------------HISTOIRE-----------------------------*/
+
+.histoire {
+    background-image: url(images/amoco.png);
+    background-size: 100vw auto;
+    width: 100vw;
+}
+
+.relative {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.divFleches {
+    top: 34vh;
+    left: 0;
+}
+
+.lesFleches {
+    height: auto;
+    width: 100vw;
+}
+
+.fleche {
+    background: no-repeat center url("images/fleche.png");
+    background-size: 7rem;
+    border: none;
+    height: 400px;
+    width: 150px;
+    cursor: pointer;
+    z-index: 20 ; 
+}
+
+.fleche_gauche {
+    transform: rotate(180deg);
+    left: 50px;
+}
+
+.fleche_droite {
+    right: 50px;
+}
+
+.fleche:hover {
+    opacity: 0.8;
+}
+
+.container-fluid {
+    padding-left: 0;
+}
+
+#okSon {
+    cursor: pointer;
+}
+
+.blancT {
+    background-color: white;
+    padding: 2vh 3vw 2vh 5vw;
+    opacity: 0.6;
+    margin-top: 6vh;
+    width: 30vw;
+    left: 0;
+    top: 0;
+}
+
+.titreH {
+    font-family: 'Glacial Indifference';
+    font-size: 6vh;
+}
+
+.lesZones {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.laZone1 {
+    left: 40vw;
+    top: 75vh;
+}
+
+.laZone2 {
+    left: 60vw;
+    top: 2vh;
+}
+
+.laZone3 {
+    left: 25vw;
+    top: 30vh;
+}
+
+.pictoD {
+    left: 88vw;
+    top: 82vh;
+}
+
+.pictoD img {
+    width: 8vw;
+    z-index: 10;
+    transition: 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.pictoD img:hover {
+    transform: scale(1.1);
+}
+
+.sonN {
+    left: 93vw;
+    top: 5vh;
+    width: 50px;
+}
+
+.sonN img {
+    width: 50px;
+    z-index: 10;
+}
+
+.leTexte {
+    top: 73vh;
+    left: 3vw;
+}
+
+
+.opacity0 {
+    opacity: 0 !important;
+}
+
+
+
+
+
+.explications {
+    color: white;
+    width: 35vw;
+    font-size: 1.2vw;
+
+    opacity: 1;
+    transition: 300ms ease-in-out opacity;
+}
+
+.zone {
+    transition: 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    animation: zone 7s infinite ease-in-out;
+    width: 7vw;
+    opacity: 0.5;
+    transform-origin: center;
+}
+
+
+@keyframes zone {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+/*------------------------------COMPARAISON-----------------------------*/
+
+.vs {
+    background-image: url(images/tapisserie.png) !important;
+}
+
+.pictos {
+    left: 90vw;
+    top: 34vh;
+}
+
+.pictos img {
+    width: 5.8vw;
+    z-index: 10;
+    margin: 12px 0;
+    transition: 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.pictos img:hover {
+    transform: scale(1.2);
+}
+
+.lesBateaux {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    bottom: 0vh;
+    padding: 0;
+}
+
+.lesBateaux div {
+    margin: 0;
+}
+
+.item {
+    z-index: 20;
+    width: 15vw;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.lesBateaux img {
+    width: 100%;
+}
+
+.drop {
+    top: 11vh;
+    left: 7.2vw;
+    height: 31vh;
+    width: 28.5vw;
+    overflow: hidden;
+}
+
+
+.drop2 {
+    top: 9.8vh;
+    left: 7vw;
+    height: 33.4vh;
+    width: 29vw;
+    overflow: hidden;
+}
+
+
+.drop .item {
+    width: 100%;
+}
+
+.drop2 .item {
+    width: 100% !important;
+}
+
+.cadre1 {
+    background: url(images/cadre1.svg) no-repeat !important;
+    top: 8vh;
+    left: 8vw;
+    height: 53vh;
+    width: 45vw;
+}
+
+.cadre2 {
+    background: url(images/cadre2.svg) no-repeat !important;
+    top: 8vh;
+    right: 5vw;
+    height: 53vh;
+    width: 45vw;
+}
+
+.contentPlaque1 {
+    top: 56vh;
+    left: 23vw;
+    box-shadow: 1px 1px 5px black;
+    display: block;
+}
+
+.contentPlaque2 {
+    top: 56vh;
+    right: 22vw;
+    box-shadow: 1px 1px 5px black;
+    display: block;
+}
+
+.plaque {
+    width: 15vw;
+}
+
+
+
+/*------------------------------VIDEO-----------------------------*/
+
+.video {
+    background-image: url(images/tele.PNG) !important;
+}
+
+.tele {
+    left: 10vw;
+    top: 7vh;
+}
+
+.tele img {
+    width: 68vw !important;
+}
+
+#pause {
+    left: 65vw;
+    top: 20.5vh;
+    cursor: pointer;
+    z-index: 2;
+    width: 5vw;
+}
+
+#mute {
+    left: 65vw;
+    top: 39.5vh;
+    cursor: pointer;
+    z-index: 2;
+    width: 5vw;
+}
+
+#pause img {
+    width: 6vw;
+}
+
+#mute img {
+    width: 6vw;
+}
+
+.v1 {
+    left: 73vw;
+    top: 22vh;
+}
+
+.v2 {
+    left: 73vw;
+    top: 32vh;
+}
+
+.v3 {
+    left: 73vw;
+    top: 42vh;
+}
+
+.btnVideo img {
+    width: 3vw;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 1;
+    border: none;
+}
+
+.videos {
+    left: 14vw;
+    top: 10vh;
+    width: 44vw;
+    height: 65vh;
+}
+
+#wrapper_P1 {
+    width: 44vw;
+    display: block ;
+}
+
+#wrapper_P2 {
+    width: 44vw;
+    display: none ;
+}
+
+#wrapper_P3 {
+    width: 44vw;
+    display: none ;
+}
+
+.videoCarte {
+    margin: -8px 0 0 0;
+}
+
+
+
+
+/*------------------------------CARTE-----------------------------*/
+
+.carte {}
+
+.ellispse {
+    width: 1.7vw;
+    cursor: pointer; 
+}
+
+.la1 {
+    top: 75vh;
+    left: 33vw;
+}
+
+.la2 {
+    top: 50vh;
+    left: 34vw;
+}
+
+.la3 {
+    top: 44vh;
+    left: 49vw;
+}
+
+.la4 {
+    top: 40vh;
+    left: 57vw;
+}
+
+.la5 {
+    top: 38vh;
+    left: 64vw;
+}
+
+
+.zoneNoire {
+    width: 2vw;
+    height: 2vh;
+}
+
+.zoneBr {
+    right: 0;
+    bottom: -100vh;
+}
+
+.bretagne {
+    width: 78vw;
+    z-index: 2;
+}
+
+.infosImg {
+    background: url(images/zoneImg.png) no-repeat;
+    background: cover;
+    margin: -26vh 0 0 -13vw;
+    width: 21vw;
+    height: 22vh;
+    padding: 1vw 1vw;
+    z-index: 20;
+    overflow: hidden;
+    opacity: 1;
+    transition: 300ms ease-in-out opacity;
+}
+
+.limage {
+    width: 19vw;
+}
+
+.ville {
+    color: white;
+    bottom: 0;
+    padding: 3%;
+    font-size: 1.5vw
+}
+
+.leBateau {
+    top: 45vh;
+    left: 28vw;
+}
+
+.leBateau img {
+    width: 4vw;
+}
+
+.videoCarte {
+    width: 102vw;
+}
+
+
+/*------------------------------ALBUM-----------------------------*/
+
+.album {}
+
+
+.fin {
+    padding: 15% 20%;
+    display: none;
+    opacity: 1;
+    transition: 300ms ease-in-out opacity;
+}
+
+.texteFin {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.btnFin {
+    margin: 5vh 3vw;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+    transition: 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.btnFin:hover {
+    transform: scale(1.1);
+}
+
+.debut {
+    padding: 15% 20%;
+    opacity: 0.7;
+}
+
+.texteDebut {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    background: black;
+    padding: 10%;
+    width: 50%;
+    animation: texteDisp 10s ease-in-out;
+    opacity: 0;
+    display: block;
+}
+
+
+@keyframes texteDisp {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes texteApp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.lienCredits {
+    color: #F5DE20;
+    font-size: 1.3vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #F5DE20 0%, #F5DE20 2%, transparent 2.01%) no-repeat center bottom / 0 100%;
+    transition: background-size .4s;
+    z-index: 3;
+}
+
+.lienCredits:hover {
+    color: #F5DE20;
+    background: linear-gradient(to top, #F5DE20 0%, #F5DE20 2%, transparent 2.01%) no-repeat center bottom / 30% 100%;
+    text-decoration: none;
+    ;
+}
+
+
+/*------------------------------CREDIT-----------------------------*/
+
+.credit {
+    background-image: url(images/credit.jpg) !important;
+    color: white;
+}
+
+.creditBack {
+    margin: 12vh 12vw;
+    padding: 3vh 3vw;
+    width: 76vw;
+    height: 76vh;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.7;
+    animation: texteAppOp 1.8s ease-in-out;
+}
+
+.textCredit {
+    z-index: 100;
+    opacity: 1;
+    margin: 12vh 12vw;
+    padding: 3vh 3vw;
+    font-size: 0.9vw;
+    animation: texteApp 3s ease-in-out;
+}
+
+.moi {
+    font-size: 1.8vw;
+    width: 65vw;
+    margin: 2vh 0;
+    animation: texteApp 3s ease-in-out;
+}
+
+.credit h2 {
+    color: #F5DE20;
+    font-size: 2vw;
+    margin: 2vw;
+    margin-bottom: 1vw;
+    animation: texteApp 3s ease-in-out;
+}
+
+@keyframes texteAppOp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}

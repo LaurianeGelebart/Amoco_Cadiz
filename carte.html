@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Bibliothèques CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Définitions CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Amoco Cadiz</title>
+</head>
+
+
+<body class="carte">
+    <main class="container-fluid position-relative ">
+
+        <video autoplay class="videoCarte" >
+            <source src="images/Carte.mp4" type="video/mp4">
+        </video>
+        
+        <div class="leBateau position-absolute">
+            <img src="images/bateau.png">
+        </div>
+
+        <div class="zoneNoire la1 position-absolute">
+            <img data-ville="1" class="ellispse" src="images/ellipse.png">
+            <div class="infosImg inf1 opacity0 position-relative">
+                <img class="limage position-absolute" src="images/plogoff.png">
+                <p class="ville position-absolute">Plogoff</p>
+            </div>
+        </div>
+        
+        <div class="zoneNoire la2 position-absolute">
+            <img data-ville="2" class="ellispse" src="images/ellipse.png">
+            <div class="infosImg inf2 opacity0 position-relative">
+                <img class="limage position-absolute" src="images/portsall.png">
+                <p class="ville position-absolute">Porstall</p>
+            </div>
+        </div>
+
+        <div class="zoneNoire la3 position-absolute">
+            <img data-ville="3" class="ellispse" src="images/ellipse.png">
+            <div class="infosImg inf3 opacity0 position-relative">
+                <img class="limage position-absolute" src="images/roscooff.png">
+                <p class="ville position-absolute">Roscoff</p>
+            </div>
+        </div>
+
+        <div class="zoneNoire la4 position-absolute">
+            <img data-ville="4" class="ellispse" src="images/ellipse.png">
+            <div class="infosImg inf4 opacity0 position-relative">
+                <img class="limage position-absolute" src="images/trebeurden.png">
+                <p class="ville position-absolute">Trébeurden</p>
+            </div>
+        </div>
+        
+         <div class="zoneNoire la5 position-absolute">
+            <img data-ville="5" class="ellispse" src="images/ellipse.png">
+            <div class="infosImg inf5 opacity0 position-relative">
+                <img class="limage position-absolute" src="images/plougrescant.png">
+                <p class="ville position-absolute">Plougrescant</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="col-1 position-absolute sonN">
+            <img id="okSon" src="images/son.svg">
+        </div>
+
+        <div class="col-1 pictos position-absolute">
+            <a class="col" href="carte.html"><img src="images/pictoN1.png"></a>
+            <a class="col" href="video.html"><img src="images/pictoN3.png"></a>
+            <a class="col" href="vs.html"><img src="images/pictoN4.png"></a>
+            <a class="col" href="photo.html"><img src="images/pictoN2.png"></a>
+            <a class="col" href="index.html"><img src="images/pictoN5.png"></a>
+        </div>
+
+
+    </main>
+
+    <!-- Bibliothèques JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Script custom -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
